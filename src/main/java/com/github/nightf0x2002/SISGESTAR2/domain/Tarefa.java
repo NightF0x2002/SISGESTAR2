@@ -1,40 +1,42 @@
-package com.github.nightf0x2002.SISGESTAR2;
+package com.github.nightf0x2002.SISGESTAR2.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Tarefa implements Serializable {
+@Table(name = "tarefa")
+@Entity
+@Getter
+@Setter
+public class Tarefa {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nome")
     private String titulo;
+
+    @Column(name = "descricao")
     private String descricao;
 
-    public Long getId() {
-        return id;
-    }
+    @ManyToOne
+    @JoinColumn(name = "id_usuario_responsavel")
+    private Usuario responsavel;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @ManyToMany
+    @JoinTable(
+            name = "rel_tarefa_usuario",
+            joinColumns = { @JoinColumn(name = "id_tarefa") },
+            inverseJoinColumns = { @JoinColumn(name = "id_usuario") }
+    )
+    private List<Usuario> acompanhadores = new ArrayList<>();
 
-    public String getTitulo() {
-        return titulo;
-    }
+    @Column(name = "id_st_tarefa")
+    private Long idStatus;
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public Tarefa(Long id, String titulo, String descricao) {
-        this.id = id;
-        this.titulo = titulo;
-        this.descricao = descricao;
-    }
 }

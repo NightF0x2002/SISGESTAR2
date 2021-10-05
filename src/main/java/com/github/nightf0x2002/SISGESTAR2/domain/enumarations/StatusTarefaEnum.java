@@ -1,4 +1,4 @@
-package com.github.nightf0x2002.SISGESTAR2.domain.enumerations;
+package com.github.nightf0x2002.SISGESTAR2.domain.enumarations;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
