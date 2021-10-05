@@ -7,3 +7,22 @@ spring:
   liquibase:
     change-log: classpath:/config/liquibase/master.xml
     drop-first: true
+
+  mail:
+    host: felipebarcellosreis27@gmail.com
+    port: 587
+    username: felipebarcellosreis27@gmail.com
+    password: flp120702
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          quitwait: false
+
+  application:
+    mail:
+      endereco-remetente: email@email.com
+      nome-remetente: SISGESTAR

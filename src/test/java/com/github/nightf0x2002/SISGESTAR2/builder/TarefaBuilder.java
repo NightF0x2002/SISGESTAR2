@@ -4,7 +4,6 @@ import com.github.nightf0x2002.SISGESTAR2.domain.Tarefa;
 import com.github.nightf0x2002.SISGESTAR2.repository.TarefaRepository;
 import com.github.nightf0x2002.SISGESTAR2.service.dto.TarefaDTO;
 import com.github.nightf0x2002.SISGESTAR2.service.mapper.TarefaMapper;
-import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

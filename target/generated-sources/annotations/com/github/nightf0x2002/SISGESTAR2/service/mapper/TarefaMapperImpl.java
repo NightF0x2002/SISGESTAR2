@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-10-01T15:51:46-0300",
+    date = "2021-10-05T14:15:15-0300",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 1.8.0_292 (Private Build)"
 )
 @Component
@@ -30,6 +30,8 @@ public class TarefaMapperImpl implements TarefaMapper {
         tarefa.setId( tarefaDTO.getId() );
         tarefa.setDescricao( tarefaDTO.getDescricao() );
         tarefa.setAcompanhadores( usuarioDTOListToUsuarioList( tarefaDTO.getAcompanhadores() ) );
+
+        verificaElementosNulos( tarefa );
 
         return tarefa;
     }
