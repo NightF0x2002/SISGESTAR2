@@ -3,8 +3,14 @@ package com.github.nightf0x2002.SISGESTAR2.domain;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
-import java.sql.Date;
+import javax.persistence.Entity;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Column;
+import javax.persistence.Table;
+
+import java.time.LocalDate;
 
 @Table(name = "comentario")
 @Entity
@@ -23,7 +29,7 @@ public class Comentario {
     private String descricao;
 
     @Column(name = "dt_comentario")
-    private Date data;
+    private LocalDate data;
 
 
 }

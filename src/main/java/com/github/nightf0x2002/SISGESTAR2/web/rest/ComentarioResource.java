@@ -1,7 +1,12 @@
 package com.github.nightf0x2002.SISGESTAR2.web.rest;
 
 import com.github.nightf0x2002.SISGESTAR2.domain.Comentario;
+import com.github.nightf0x2002.SISGESTAR2.service.ComentarioService;
+import com.github.nightf0x2002.SISGESTAR2.service.dto.ComentarioDTO;
+import com.github.nightf0x2002.SISGESTAR2.service.dto.TarefaDTO;
+import com.github.nightf0x2002.SISGESTAR2.service.mapper.ComentarioMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -12,16 +17,15 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ComentarioResource {
 
-    List<Comentario> comentarios = new ArrayList<>();
+    private final ComentarioService comentarioService;
 
     @GetMapping
-    public List<Comentario> recuperarTodos() {
-        return comentarios;
+    public ResponseEntity<List<ComentarioDTO>> recuperarTodos() {
+        return ResponseEntity.ok(comentarioService.findAll());
     }
 
     @PostMapping
-    public Comentario criarComentario(@RequestBody Comentario novoComentario) {
-        comentarios.add(novoComentario);
-        return novoComentario;
+    public ResponseEntity<ComentarioDTO> create(@RequestBody ComentarioDTO comentarioDTO) {
+        return ResponseEntity.ok(comentarioService.save(comentarioDTO));
     }
 }

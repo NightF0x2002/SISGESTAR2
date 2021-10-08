@@ -32,7 +32,7 @@ public class ComentarioService {
     }
 
     public Optional<ComentarioDTO> findById(Long id) {
-        return comentarioRepository.findById(id).map(comentarioMapper :: toDTO);
+        return comentarioRepository.findById(id).map(comentarioMapper::toDTO);
     }
 
     public void deleteById(Long id) {
