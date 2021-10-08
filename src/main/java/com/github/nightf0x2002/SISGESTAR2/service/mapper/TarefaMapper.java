@@ -2,6 +2,7 @@ package com.github.nightf0x2002.SISGESTAR2.service.mapper;
 
 import com.github.nightf0x2002.SISGESTAR2.domain.Tarefa;
 import com.github.nightf0x2002.SISGESTAR2.domain.Usuario;
+import com.github.nightf0x2002.SISGESTAR2.domain.enumarations.StatusTarefaEnum;
 import com.github.nightf0x2002.SISGESTAR2.service.dto.TarefaDTO;
 import com.github.nightf0x2002.SISGESTAR2.service.dto.TarefaListDTO;
 import org.aspectj.lang.annotation.After;
@@ -33,5 +34,11 @@ public interface TarefaMapper extends EntityMapper<Tarefa, TarefaDTO> {
         if (Objects.isNull(tarefa.getResponsavel().getId())) {
             tarefa.setResponsavel(null);
         }
+    }
+
+    @AfterMapping
+    default void atualizarDescricaoStatus(@MappingTarget TarefaDTO tarefaDTO) {
+        StatusTarefaEnum statusTarefaEnum = StatusTarefaEnum.obterPorId(tarefaDTO.getIdStatus());
+        tarefaDTO.setDescricaoStatus(statusTarefaEnum.getDescricao());
     }
 }

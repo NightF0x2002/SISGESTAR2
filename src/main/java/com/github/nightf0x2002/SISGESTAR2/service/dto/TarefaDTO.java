@@ -14,7 +14,8 @@ public class TarefaDTO {
     private String nome;
     private String descricao;
     private Long idResponsavel;
-    private Long idStaus;
+    private Long idStatus;
+    private String descricaoStatus;
     private List<UsuarioDTO> acompanhadores = new ArrayList<>();
 
 }

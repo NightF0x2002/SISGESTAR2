@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-10-05T14:15:15-0300",
+    date = "2021-10-08T14:15:14-0300",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 1.8.0_292 (Private Build)"
 )
 @Component
@@ -28,8 +28,10 @@ public class TarefaMapperImpl implements TarefaMapper {
 
         tarefa.setResponsavel( tarefaDTOToUsuario( tarefaDTO ) );
         tarefa.setId( tarefaDTO.getId() );
+        tarefa.setNome( tarefaDTO.getNome() );
         tarefa.setDescricao( tarefaDTO.getDescricao() );
         tarefa.setAcompanhadores( usuarioDTOListToUsuarioList( tarefaDTO.getAcompanhadores() ) );
+        tarefa.setIdStatus( tarefaDTO.getIdStatus() );
 
         verificaElementosNulos( tarefa );
 
@@ -46,8 +48,12 @@ public class TarefaMapperImpl implements TarefaMapper {
 
         tarefaDTO.setIdResponsavel( tarefaResponsavelId( tarefa ) );
         tarefaDTO.setId( tarefa.getId() );
+        tarefaDTO.setNome( tarefa.getNome() );
         tarefaDTO.setDescricao( tarefa.getDescricao() );
+        tarefaDTO.setIdStatus( tarefa.getIdStatus() );
         tarefaDTO.setAcompanhadores( usuarioListToUsuarioDTOList( tarefa.getAcompanhadores() ) );
+
+        atualizarDescricaoStatus( tarefaDTO );
 
         return tarefaDTO;
     }
@@ -58,9 +64,13 @@ public class TarefaMapperImpl implements TarefaMapper {
             return null;
         }
 
-        TarefaListDTO tarefaListDTO = new TarefaListDTO();
+        Long id = null;
+        String nome = null;
 
-        tarefaListDTO.setId( tarefa.getId() );
+        id = tarefa.getId();
+        nome = tarefa.getNome();
+
+        TarefaListDTO tarefaListDTO = new TarefaListDTO( id, nome );
 
         return tarefaListDTO;
     }

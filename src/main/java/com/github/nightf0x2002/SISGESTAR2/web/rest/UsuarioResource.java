@@ -26,4 +26,9 @@ public class UsuarioResource {
         return ResponseEntity.ok(usuarioService.save(usuarioDTO));
     }
 
+    @GetMapping("/obter-por-hash/{hash}")
+    public ResponseEntity<UsuarioDTO> obterPorHash(@PathVariable("hash") String hash) {
+        return ResponseEntity.of(usuarioService.obterPorHash(hash));
+    }
+
 }

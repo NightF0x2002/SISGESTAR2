@@ -19,7 +19,7 @@ public class Tarefa {
     private Long id;
 
     @Column(name = "nome")
-    private String titulo;
+    private String nome;
 
     @Column(name = "descricao")
     private String descricao;
