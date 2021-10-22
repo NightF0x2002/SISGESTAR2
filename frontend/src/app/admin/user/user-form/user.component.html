@@ -1,0 +1,50 @@
+<app-generic-form>
+    <form
+      class="ui-g ui-fluid"
+      [formGroup]="form"
+      novalidate
+      genericFormRef
+    >
+      <h1 genericFormHeaderclass="ui-g-12">{{title}}</h1>
+        <div class="ui-g form-group ui-g-12">
+            <div class="ui-g-12 md-inputfield">
+              <app-generic-input
+                id="nome"
+                class="ui-g-12 ui-md-6"
+                formControlName="nome"
+                [sLabel]="MSG.USUARIO_NOME"
+              >
+              </app-generic-input>
+            </div>
+            <div class="ui-g-12 md-inputfield">
+              <app-generic-input
+                id="email"
+                class="ui-g-12 ui-md-6"
+                formControlName="email"
+                [sLabel]="MSG.USUARIO_EMAIL"
+              >
+            </app-generic-input>
+            </div>
+        </div>
+        <div class="ui-g ui-g-12" genericFormFooterButtons>
+            <div class="ui-g-6 ui-md-2">
+                <button
+                  pButton
+                  type="submit"
+                  label="save"
+                  (click)="saveForm()"
+                  icon="ui-icon-save"
+                ></button>
+            </div>
+            <div class="ui-g-6 ui-md-2">
+                <button
+                  class="ui-button-secondary"
+                  pButton type="button"
+                  label="Limpar Formulario"
+                  (click)="clearForm()"
+                  icon="ui-icon-cancel"
+                ></button>
+            </div>
+        </div>
+    </form>
+</app-generic-form>

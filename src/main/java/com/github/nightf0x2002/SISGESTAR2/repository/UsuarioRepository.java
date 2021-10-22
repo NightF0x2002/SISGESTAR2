@@ -18,4 +18,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
                     "WHERE" +
                     "   usuario.hash = :hash", nativeQuery = true)
     Optional<Usuario> findByHash(@Param("hash") String hash);
+
+
+
 }

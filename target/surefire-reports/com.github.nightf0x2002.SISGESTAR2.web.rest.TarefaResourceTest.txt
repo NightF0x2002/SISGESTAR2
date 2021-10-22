@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.github.nightf0x2002.SISGESTAR2.web.rest.TarefaResourceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.7 s - in com.github.nightf0x2002.SISGESTAR2.web.rest.TarefaResourceTest
