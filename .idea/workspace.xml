@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b63d11f-0c5b-4518-a6fd-b0978a951935" name="Changes" comment="implementação do email">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaFilterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/error/AlteracaoStatusTarefaInvalidaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/domain/Tarefa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/domain/Tarefa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/domain/enumarations/StatusTarefaEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/domain/enumarations/StatusTarefaEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/repository/TarefaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/repository/TarefaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/SendEmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/SendEmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/TarefaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/TarefaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaListDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaListDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/web/rest/UsuarioResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/web/rest/UsuarioResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/domain/Tarefa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/domain/Tarefa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/domain/enumarations/StatusTarefaEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/domain/enumarations/StatusTarefaEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/repository/TarefaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/repository/TarefaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/repository/UsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/TarefaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/TarefaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/UsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaListDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaListDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/mapper/TarefaMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/service/mapper/TarefaMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/web/rest/UsuarioResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/nightf0x2002/SISGESTAR2/web/rest/UsuarioResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/github/nightf0x2002/SISGESTAR2/service/mapper/TarefaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/github/nightf0x2002/SISGESTAR2/service/mapper/TarefaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/github/nightf0x2002/SISGESTAR2/service/mapper/UsuarioMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/github/nightf0x2002/SISGESTAR2/service/mapper/UsuarioMapperImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/TarefaService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/repository/TarefaRepository.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/repository/UsuarioRepository.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/web/rest/UsuarioResource.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/web/rest/TarefaResource.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/error/TarefaNaoEncontradaException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaListDTO.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/domain/Tarefa.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/error/UsuarioNaoAutorizadoException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/dto/UsuarioDTO.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/mapper/UsuarioMapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/Sisgestar2Application.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/202110011457_add_hash_usuario.changelog.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/mapper/EntityMapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/mapper/TarefaMapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/202109301432_create_usuario.changelog.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/domain/Usuario.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/202110011455_create_status_tarefa.changelog.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/dto/TarefaDTO.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/service/UsuarioService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/202109281519_create_tarefa.changelog.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
+  </component>
+  <component name="ProjectId" id="1yotieObvNm6UGVlRYFzh2ubi3e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.github.nightf0x2002.SISGESTAR2.web.rest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Sisgestar2Application">
+    <configuration name="Unnamed (1)" type="AntRunConfigurationType" factoryName="Ant build" temporary="true" debug-port="25000" jdk-name="1.8" max-memory="256" logging-level="0">
+      <file>$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/Sisgestar2Application.java</file>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="AntRunConfigurationType" factoryName="Ant build" temporary="true" debug-port="25000" jdk-name="11" max-memory="256" logging-level="0">
+      <file>$PROJECT_DIR$/src/main/java/com/github/nightf0x2002/SISGESTAR2/Sisgestar2Application.java</file>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sisgestar2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="SISGESTAR2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.nightf0x2002.SISGESTAR2.Sisgestar2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker.sisgestar-postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="sisgestar-postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Sisgestar2Application" />
+        <item itemvalue="Docker.docker: Compose Deployment" />
+        <item itemvalue="Docker.docker.sisgestar-postgres: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b63d11f-0c5b-4518-a6fd-b0978a951935" name="Changes" comment="" />
+      <created>1632929897534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632929897534</updated>
+      <workItem from="1632939013733" duration="184000" />
+      <workItem from="1632939326621" duration="371000" />
+      <workItem from="1632939722358" duration="4302000" />
+      <workItem from="1633000825033" duration="40000" />
+      <workItem from="1633016584693" duration="11846000" />
+      <workItem from="1633086353360" duration="792000" />
+      <workItem from="1633104503161" duration="8379000" />
+      <workItem from="1633364722555" duration="8441000" />
+      <workItem from="1633432003639" duration="368000" />
+      <workItem from="1633449586174" duration="6607000" />
+      <workItem from="1633519447681" duration="613000" />
+      <workItem from="1633535733363" duration="7023000" />
+      <workItem from="1633605383203" duration="80000" />
+      <workItem from="1633623812613" duration="12285000" />
+      <workItem from="1633692239638" duration="140000" />
+      <workItem from="1633708958956" duration="2666000" />
+    </task>
+    <task id="LOCAL-00001" summary="implementação do email">
+      <created>1633455106082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633455106082</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="implementação do email" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementação do email" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="antlr.NoViableAltException" package="antlr" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
